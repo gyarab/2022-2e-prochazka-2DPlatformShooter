@@ -1,0 +1,219 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Particles/StormFogParticle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Particles/StormParticle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Actors/Storm.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 960, 540 )
+
+[node name="Storm" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2( 960, 540 )
+shape = SubResource( 1 )
+
+[node name="Effects" type="Node2D" parent="."]
+
+[node name="Fog" type="Node2D" parent="Effects"]
+
+[node name="StormFogParticle" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 70 )
+
+[node name="StormFogParticle2" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 206 )
+
+[node name="StormFogParticle3" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 336 )
+
+[node name="StormFogParticle4" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 472 )
+
+[node name="StormFogParticle5" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 608 )
+
+[node name="StormFogParticle6" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 744 )
+
+[node name="StormFogParticle7" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 874 )
+
+[node name="StormFogParticle8" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1676, 1010 )
+
+[node name="StormFogParticle9" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 70 )
+
+[node name="StormFogParticle10" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 206 )
+
+[node name="StormFogParticle11" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 336 )
+
+[node name="StormFogParticle12" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 472 )
+
+[node name="StormFogParticle13" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 608 )
+
+[node name="StormFogParticle14" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 744 )
+
+[node name="StormFogParticle15" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 874 )
+
+[node name="StormFogParticle16" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 1196, 1010 )
+
+[node name="StormFogParticle17" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 70 )
+
+[node name="StormFogParticle18" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 206 )
+
+[node name="StormFogParticle19" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 336 )
+
+[node name="StormFogParticle20" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 472 )
+
+[node name="StormFogParticle21" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 608 )
+
+[node name="StormFogParticle22" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 744 )
+
+[node name="StormFogParticle23" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 874 )
+
+[node name="StormFogParticle24" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 714, 1010 )
+
+[node name="StormFogParticle25" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 70 )
+
+[node name="StormFogParticle26" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 206 )
+
+[node name="StormFogParticle27" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 336 )
+
+[node name="StormFogParticle28" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 472 )
+
+[node name="StormFogParticle29" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 608 )
+
+[node name="StormFogParticle30" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 744 )
+
+[node name="StormFogParticle31" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 874 )
+
+[node name="StormFogParticle32" parent="Effects/Fog" instance=ExtResource( 1 )]
+position = Vector2( 232, 1010 )
+
+[node name="Pieces" type="Node2D" parent="Effects"]
+
+[node name="StormParticle" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 70 )
+
+[node name="StormParticle2" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 206 )
+
+[node name="StormParticle3" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 336 )
+
+[node name="StormParticle4" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 472 )
+
+[node name="StormParticle5" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 608 )
+
+[node name="StormParticle6" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 744 )
+
+[node name="StormParticle7" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 874 )
+
+[node name="StormParticle8" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1676, 1010 )
+
+[node name="StormParticle9" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 70 )
+
+[node name="StormParticle10" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 206 )
+
+[node name="StormParticle11" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 336 )
+
+[node name="StormParticle12" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 472 )
+
+[node name="StormParticle13" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 608 )
+
+[node name="StormParticle14" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 744 )
+
+[node name="StormParticle15" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 874 )
+
+[node name="StormParticle16" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 1196, 1010 )
+
+[node name="StormParticle17" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 70 )
+
+[node name="StormParticle18" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 206 )
+
+[node name="StormParticle19" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 336 )
+
+[node name="StormParticle20" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 472 )
+
+[node name="StormParticle21" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 608 )
+
+[node name="StormParticle22" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 744 )
+
+[node name="StormParticle23" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 874 )
+
+[node name="StormParticle24" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 714, 1010 )
+
+[node name="StormParticle25" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 70 )
+
+[node name="StormParticle26" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 206 )
+
+[node name="StormParticle27" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 336 )
+
+[node name="StormParticle28" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 472 )
+
+[node name="StormParticle29" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 608 )
+
+[node name="StormParticle30" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 744 )
+
+[node name="StormParticle31" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 874 )
+
+[node name="StormParticle32" parent="Effects/Pieces" instance=ExtResource( 2 )]
+position = Vector2( 232, 1010 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
